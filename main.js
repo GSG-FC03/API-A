@@ -6,6 +6,7 @@ let arr = [];
 fetch("https://ghibliapi.herokuapp.com/people")
   .then((res) => res.json())
   .then((data) => {
+    console.log(data)
     data.forEach((pepole) => {
       const card = document.createElement("div");
       card.setAttribute("class", "card");
